@@ -1,0 +1,17 @@
+#submit-btn {
+    background-color: tomato;
+}
+#submit-btn:hover, .btn-primary:hover, .dropdown-item:hover {
+    background-color: turquoise;
+    color: black;
+}
+
+.my-links {
+    text-decoration: none;
+    color: black;
+}
+
+.my-links:hover {
+    text-decoration: underline;
+    color: rgb(5, 198, 198);
+}

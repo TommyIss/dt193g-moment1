@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 1 - Bootstrap</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.scss">
+    <link rel="stylesheet" href="custom.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body class="max-w-7xl m-auto">
+    <header class="bg-red-400 p-2 mb-5">
+        <div class="max-w-5xl m-auto flex align-items-center justify-content-around">
+
+            <h1><a class="my-links" href="index.html">Moment 1</a></h1>
+
+            <!-- Navigeringsmeny -->
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Meny
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="index.html">Startsida</a></li>
+                    <li><a class="dropdown-item" href="tailwind.html">Tailwind</a></li>
+                    <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                    <li><a class="dropdown-item" href="publish.html">Publicering</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main class="min-h-56 px-4 pb-5">
+        <section class="max-w-5xl m-auto">
+            <h2>Bootstrap</h2>
+            <p>
+                Bootstrap är ett av världens mest använda CSS-ramverk och utvecklas ursprungligen av Twitter. Det erbjuder ett omfattande bibliotek av färdiga komponenter och en mängd hjälpsamma klasser för att snabbt bygga moderna webbplatser.
+            </p>
+            <a class="my-links text-decoration-underline" href="https://getbootstrap.com/" target="_blank" title="Besök Bootstraps webbplats">Besök Bootstraps webbplats</a>
+
+            <article class="my-3">
+                <h3>
+                    Utvärdering av Bootstrap - ramverk
+                </h3>
+                
+                <h4>
+                    Fördelar
+                </h4>
+                <p>
+                    Bootstrap erbjuder färdiga komponenter som knappar, tabeller och dropdown-meny, vilket bidrar till snabbare utveckling och sparar mycket tid. Bootstrap underlättar att bygga mobilanpassade layouter.
+                </p>
+
+                <h4>
+                    Nackdelar
+                </h4>
+                <p>
+                    Å andra sidan har Bootstrap några nackdelar såsom att många webbplatser som använder Bootstrap ser likadana ut om man inte skriver extra CSS för att anpassa stilen och bryta sig loss från standardutseendet, dessutom Bootstrap är byggt med SCSS som kräver SCSS-kompilator för att kunna tolka och omvandla SCSS-kod till vanlig CSS.
+                </p>
+            </article>
+
+            <article>
+                <h3>
+                    Mina upplevelser
+                </h3>
+
+                <p>
+                    Att arbeta med Tailwind CSS var väldigt smidigt. Det gav mig möjlighet att bygga snabbt responsiv layout och använda färdiga komponenter för tabeller, formulär och navigeringsmeny. Dock noterade jag att det krävdes lite extra CSS för att få ett mer unikt utseende och även SCSS-kompilator för att omvandla SCSS-kod till vanlig css, därför jag installerade Parcel, npm-paket.
+                </p>
+            </article>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="border px-4 py-2 text-left">Namn</th>
+                        <th class="border px-4 py-2 text-left">E-post</th>
+                        <th class="border px-4 py-2 text-left">Roll</th>
+                        <th class="border px-4 py-2 text-left">Aktiv</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-gray-500">
+                        <td class="border px-4 py-2 text-left">Tommy Issa</td>
+                        <td class="border px-4 py-2 text-left"><a class="my-links" href="mailto:tois2401@student.miun.se">tois2401@student.miun.se</a></td>
+                        <td class="border px-4 py-2 text-left">Elev</td>
+                        <td class="border px-4 py-2 text-left">Ja</td>
+                    </tr>
+                    <tr class="hover:bg-gray-500">
+                        <td class="border px-4 py-2 text-left">Malin Larsson</td>
+                        <td class="border px-4 py-2 text-left"><a class="my-links" href="mailto:malin.larsson@miun.se">malin.larsson@miun.se</a></td>
+                        <td class="border px-4 py-2 text-left">Lärare</td>
+                        <td class="border px-4 py-2 text-left">Ja</td>
+                    </tr>
+                    <tr class="hover:bg-gray-500">
+                        <td class="border px-4 py-2 text-left">Mattias Dahlgren</td>
+                        <td class="border px-4 py-2 text-left"><a href="mailto:mattias.dahlgren@miun.se" class="my-links">mattias.dahlgren@miun.se</a></td>
+                        <td class="border px-4 py-2 text-left">Program ansvarig</td>
+                        <td class="border px-4 py-2 text-left">Ja</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-500">
+                        <td class="border px-4 py-2 text-left">Erik Karlsson</td>
+                        <td class="border px-4 py-2 text-left"><a class="my-links" href="mailto:erik@example.com">erik@example.com</a></td>
+                        <td class="border px-4 py-2 text-left">Gäst</td>
+                        <td class="border px-4 py-2 text-left">Nej</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form class="mt-8 space-y-4 max-w-md">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Namn:</label>
+                    <input type="text" id="name" class="form-control" placeholder="Ange namn">
+                </div>
+
+                <div>
+                    <label for="email" class="form-label">E-post:</label>
+                    <input type="text" id="email" class="form-control" placeholder="Ange e-post">
+                </div>
+
+                <div>
+                    <label for="roll" class="form-label">Roll:</label>
+                    <select type="text" class="form-select">
+                        <option selected="">Välj roll</option>
+                        <option value="1">Lärare</option>
+                        <option value="2">Elev</option>
+                        <option value="3">Gäst</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="status" class="ml-2 block text-sm text-gray-700">Aktiv användare:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label" for="yes">Ja</label>
+                    </div>
+                    
+                </div>
+
+                <div>
+                    <label for="comment" class="form-label">Kommentar:</label>
+                    <br>
+                    <textarea class="form-control mb-3" rows="3" placeholder="Valfri kommentar..."></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-primary">Skicka</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer class="bg-red-400 p-2">
+        <div class="max-w-5xl m-auto">
+            <p>
+                Laborationsuppgift för kursen DT193G, Fullstacks-utveckling med ramrerk
+            </p>
+
+            <p>
+                &copy; Copyrights Tommy Issa, 2025.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 1 - Tailwind</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.scss">
+    <link rel="stylesheet" href="custom.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="max-w-7xl m-auto">
+    <header class="bg-red-400 p-2 mb-5">
+        <div class="max-w-5xl m-auto flex align-items-center justify-content-around">
+            <h1><a class="my-links" href="index.html">Moment 1</a></h1>
+
+            <!-- Navigeringsmeny -->
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Meny
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="index.html">Startsida</a></li>
+                    <li><a class="dropdown-item" href="#">Tailwind</a></li>
+                    <li><a class="dropdown-item" href="bootstrap.html">Bootstrap</a></li>
+                    <li><a class="dropdown-item" href="publish.html">Publicering</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main class="min-h-56 px-4 pb-5">
+        <section class="max-w-5xl m-auto">
+            <h2>Tailwind</h2>
+            <p>
+                Tailwind CSS är ett utility-first CSS-ramverk som gör det möjligt att bygga moderna och responsiva webbgränssnitt direkt i HTML. Istället för att skriva egna CSS-klasser, använder man färdiga klasser för layout, färg, typografi, spacing och mycket mer.
+            </p>
+            <a class="my-links" href="https://tailwindcss.com/" target="_blank">Besök Tailwinds webbplats</a>
+            <article>
+                <h3>
+                    Utvärdering av Tailwind CSS - ramverk
+                </h3>
+                
+                <h4>
+                    Fördelar
+                </h4>
+                <p>
+                    Tailwind bidrar till flera fördelar såsom att man kan bygga och styla gränssnitt direkt i HTML utan att växla mellan HTML och CSS, designen är responsiv från början och har inbyggt stöd för olika skärmstorlekar, och ge full kontroll över designen, vilken kan anpassas efter behovet.
+                </p>
+
+                <h4>
+                    Nackdelar
+                </h4>
+                <p>
+                    Å andra sidan har Tailwind några nackdelar såsom att det kan leda till många klasser i varje HTML-element vilket gör koden svårläst, det tar tid att lära sig alla utility-klasser, Till skillnad från Bootstrap har Tailwind inga färdiga komponenter.
+                </p>
+            </article>
+
+            <article>
+                <h3>
+                    Mina upplevelser
+                </h3>
+
+                <p>
+                    Att arbeta med Tailwind CSS var först lite ovant, men efter att ha lärt mig de vanligaste klasser gick det snabbt att bygga snygga och responsiva layouter. Det kändes att jag hade full kontroll över designen utan att behöva skriva mycket egen CSS-kod.
+                </p>
+            </article>
+
+            <table class="w-100 md:fs-1 border border-black-600 mt-6">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="border px-4 py-2 text-left">Namn</th>
+                        <th class="border px-4 py-2 text-left">E-post</th>
+                        <th class="border px-4 py-2 text-left">Roll</th>
+                        <th class="border px-4 py-2 text-left">Aktiv</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-gray-500">
+                        <td class="border px-4 py-2 text-left">Tommy Issa</td>
+                        <td class="border px-4 py-2 text-left"><a class="my-links" href="mailto:tois2401@student.miun.se">tois2401@student.miun.se</a></td>
+                        <td class="border px-4 py-2 text-left">Elev</td>
+                        <td class="border px-4 py-2 text-left">Ja</td>
+                    </tr>
+                    <tr class="hover:bg-gray-500">
+                        <td class="border px-4 py-2 text-left">Malin Larsson</td>
+                        <td class="border px-4 py-2 text-left"><a class="my-links" href="mailto:malin.larsson@miun.se">malin.larsson@miun.se</a></td>
+                        <td class="border px-4 py-2 text-left">Lärare</td>
+                        <td class="border px-4 py-2 text-left">Ja</td>
+                    </tr>
+                    <tr class="hover:bg-gray-500">
+                        <td class="border px-4 py-2 text-left">Mattias Dahlgren</td>
+                        <td class="border px-4 py-2 text-left"><a class="my-links" href="mailto:mattias.dahlgren@miun.se">mattias.dahlgren@miun.se</a></td>
+                        <td class="border px-4 py-2 text-left">Program ansvarig</td>
+                        <td class="border px-4 py-2 text-left">Ja</td>
+                    </tr>
+                    <tr class="hover:bg-gray-500">
+                        <td class="border px-4 py-2 text-left">Erik Karlsson</td>
+                        <td class="border px-4 py-2 text-left"><a class="my-links" href="mailto:erik@example.com">erik@example.com</a></td>
+                        <td class="border px-4 py-2 text-left">Gäst</td>
+                        <td class="border px-4 py-2 text-left">Nej</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form class="mt-8 space-y-4 max-w-md">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Namn:</label>
+                    <input type="text" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" placeholder="Ange namn">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">E-post:</label>
+                    <input type="text" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" placeholder="Ange e-post">
+                </div>
+
+                <div>
+                    <label for="roll" class="block text-sm font-medium text-gray-700">Roll:</label>
+                    <select type="text" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2">
+                        <option>Lärare</option>
+                        <option>Elev</option>
+                        <option>Gäst</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="status" class="ml-2 block text-sm text-gray-700">Aktiv användare:</label>
+                    <input type="checkbox"><label class="px-1" for="yes">Ja</label>
+                </div>
+
+                <div>
+                    <label for="comment">Kommentar:</label>
+                    <br>
+                    <textarea class="mt-1 block w-50 border border-black-300 rounded px-3 py-2" rows="3" placeholder="Valfri kommentar..."></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn" class="bg-red-400 text-white- px-4 py-2 rounded">Skicka</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer class="bg-red-400 p-2">
+        <div class="max-w-5xl m-auto">
+            <p>
+                Laborationsuppgift för kursen DT193G, Fullstacks-utveckling med ramrerk
+            </p>
+
+            <p>
+                &copy; Copyrights Tommy Issa, 2025.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
